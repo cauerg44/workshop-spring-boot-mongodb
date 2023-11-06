@@ -22,7 +22,7 @@ import com.cauergarcia.workshopmongodb.services.UserService;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
-	
+
 	@Autowired
 	private UserService userService;
 	
@@ -70,4 +70,5 @@ public class UserResource {
 		User obj = userService.findById(id);
 		return ResponseEntity.ok().body(obj.getPosts());
 	}
+	
 }

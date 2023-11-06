@@ -76,6 +76,8 @@ public class Post implements Serializable{
 		this.author = author;
 	}
 	
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
